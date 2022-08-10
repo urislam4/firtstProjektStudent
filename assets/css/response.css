@@ -1,0 +1,48 @@
+@media (max-width: 992px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .navbar {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .container {
+    width: 75%;
+  }
+  .main_slider {
+    display: none;
+  }
+  .main_item {
+    margin-right: 0;
+    width: 75%;
+  }
+  .main_item h1 {
+    font-size: 3.2rem;
+  }
+  .header {
+    height: 130vh;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 87%;
+  }
+  .navbar {
+    display: none;
+  }
+  nav {
+    justify-content: flex-end;
+  }
+  .main_item {
+    width: 100%;
+  }
+  .main_item h1 {
+    letter-spacing: 7px;
+  }
+  .header {
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=response.css.map */
