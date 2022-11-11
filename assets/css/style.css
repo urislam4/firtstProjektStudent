@@ -86,6 +86,15 @@ nav {
   margin-bottom: 20px;
 }
 
+#opel{
+  width: 160px;
+  height: 50px;
+  background-color: #D1A954;
+  border: 1px solid #D1A954;
+  color: white;
+  border-radius: 10%;
+}
+
 .main_item a {
   background-color: #D1A954;
   padding: 8px 25px;
@@ -175,3 +184,96 @@ nav {
 }
 
 /*# sourceMappingURL=style.css.map */
+.contenir{
+  width: 400px;
+  height: 440px;
+  background-color: #dfc388;
+  border: 5px solid rgb(219, 160, 105);
+  border-radius:5%;
+  margin-top:-600px;
+  margin-left: 1500px;
+  display: none;
+}
+.Box{
+  width: 400px;
+  padding-top: 7%;
+}
+h4{
+  color: beige;
+}
+.col input{
+  background-color: #e9c67a;
+  border: 1px solid #D1A954;
+}
+h1{
+  text-align: center;
+  color: wheat;
+  margin-top:50px;
+}
+
+label{
+  color: black;
+}
+
+input{
+  width: 360px;
+  height: 30px;
+  border: 1px solid rgb(160, 158, 158);
+}
+.dog{
+  width: 40px;
+  height: 40px;
+}
+
+.phoneSubmit{
+width: 90%;
+height: 35px;
+margin-left: 20px;
+margin-top: 10px;
+border: solid 1px  rgb(231, 187, 187);
+background-color:#eecf8d;
+color: white;
+}
+.canel{
+  width: 360px;
+  height: 35px;
+  margin-top:10px ;
+  margin-left: 20px;
+  border: solid 1px rgb(231, 187, 187);
+  background-color:#D1A954 ;
+  color: aliceblue;
+}
+
+h3{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.col{
+  margin: 5px 20px;
+}
+
+.phoneinn{
+  margin: 5px ;
+}
+.button{
+  width: 100%;
+}
+.blue{
+  background-color: aqua;
+  width: 150px;
+  height: 45px;
+  color: aliceblue;
+  margin-left:900px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* #opel{
+ width: 100px;
+ height: 45px;
+ background-color: white;
+ color: rgb(69, 231, 47);;
+ margin-left:920px;
+ border: 3px solid rgb(77, 226, 58);
+ border-radius: 20%;
+} */

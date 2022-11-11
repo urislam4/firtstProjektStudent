@@ -50,7 +50,10 @@
               постоянное в Санкт-Петербурге, крупнейшее в России и одно из
               крупнейших театральных зданий в Европе XVIII.
             </p>
-            <a href="#">афиша</a>
+            <div class="open">
+              <div class="modal__close">&times;</div>
+        <button id="opel"><h4>Регистрация</h4></button>
+          </div>
           </div>
 
           <div class="main_slider">
@@ -60,6 +63,104 @@
           </div>
         </div>
       </div>
+        <div class="contenir">
+      <h1>Регистрация</h1>
+<div class="Box">
+ <div class="col">
+  <h4>Phone Number</h4>
+  <!-- <label for="" class="phoneText">Phone Number</label> -->
+  <input type="Enter Number" class="phoneNum">
+ </div>
+ <div class="col">
+  <h4>Date of Birth</h4>
+  <!-- <label for="" class="phoneDate">Date of Birth </label> -->
+  <input type="text" class="NameDate">
+  </div>
+  <div class="col">
+  <h4>IIN</h4>
+  <!-- <label for="" class="phoneinn">INN-Name </label> -->
+  <input type="text" class="nameIIN">
+  </div>
+ <div class="col">
+  <h4>Name</h4>
+  <!-- <label for="" class="phoneAge">Name</label> -->
+  <input type="text" class="phoneName">
+  </div>
+  <button class="phoneSubmit">Redister</button>
+  <button class="canel">Close</button>
+  <h3 id="result"></h3>
+  <!-- <span id="result"></span> -->
+  
+</div>
+  </div>
     </header>
+    <script >
+      const phoneNum = document.querySelector('.phoneNum');
+const phoneName = document.querySelector('.phoneName');
+const NameDate = document.querySelector('.NameDate');
+const nameIIN = document.querySelector('.nameIIN')
+const phoneSubmit = document.querySelector('.phoneSubmit');
+const span = document.querySelector('#result');
+
+let regExp = /^\+996 \d{3} \d{2}-\d{2}-\d{2}$/
+let data = /^\d{2}-\d{2}-\d{4}$/
+let regexp = /\w/gi
+let REGexp = /^\d{14}-\w$/gi
+
+
+phoneSubmit.addEventListener('click', () => {
+  if(regExp.test(phoneNum.value)){
+    result.innerText = 'вы успешно прошли Redister'
+    result.style.color = 'rgb(52, 238, 52)'
+}else{
+    result.innerText = 'вы не-успешно прошли Redister'
+    result.style.color = 'rgb(231, 80, 42)'
+}
+});
+
+phoneSubmit.addEventListener('click', () => {
+  if(REGexp.test(nameIIN.value)){
+    result.innerText = 'вы успешно прошли Redister'
+    result.style.color = 'rgb(52, 238, 52)'
+}else{
+    result.innerText = 'вы не-успешно прошли Redister'
+    result.style.color = 'rgb(231, 80, 42)'
+}
+});
+
+
+phoneSubmit.addEventListener('click', () => {
+  if(data.test(NameDate.value)){
+    result.innerText = 'вы успешно прошли Redister'
+    result.style.color = 'rgb(52, 238, 52)'
+}else{
+    result.innerText = 'вы не-успешно прошли Redister'
+    result.style.color = 'rgb(231, 80, 42)'
+}
+});
+
+
+ phoneSubmit.addEventListener('click', () => {
+    if(regexp.test(phoneName.value)){
+    result.innerText = 'вы успешно прошли Redister'
+    result.style.color = 'rgb(52, 238, 52)'
+    }else{
+    result.innerText = 'вы не-успешно прошли Redister'
+    result.style.color = 'rgb(231, 80, 42)'  
+    }
+ });
+
+ const modal = document.querySelector('.contenir');
+ const openModal = document.querySelector('#opel');
+ const closeModal = document.querySelector('.canel');
+
+
+ openModal.addEventListener('click', () => {
+  modal.style.display = 'block'
+ })
+closeModal.addEventListener('click', ()=> {
+  modal.style.display = 'none'
+})
+    </script>
   </body>
 </html>
